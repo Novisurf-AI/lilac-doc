@@ -1,0 +1,31 @@
+---
+title: "Using the Lilac Code Editor"
+sidebarTitle: "Code Editor"
+description: "Review, edit, and explore files directly in the Lilac workspace — the built-in code editor lets you inspect the agent's work without leaving the app."
+---
+
+Lilac includes a built-in code editor that lets you view and edit the files the agent creates or modifies as it works. Rather than switching to a separate tool, you can review every change, make adjustments, and understand exactly what the agent produced — all without leaving the workspace. Whether the agent built a new feature, updated a config file, or refactored existing code, the editor keeps you in full control of the output.
+
+## Opening the Code Editor
+
+When the agent creates or modifies files during a task, a file tree appears in the workspace alongside the conversation thread. Click any file in the tree to open it in the editor panel. Syntax highlighting is applied automatically based on the file type, so Python, TypeScript, Markdown, JSON, and other formats are all rendered clearly and readably.
+
+## Reviewing Agent Changes
+
+The editor lets you see exactly what the agent wrote, added, or removed. Diff views highlight additions and deletions inline, so you can quickly understand what changed between the original state of a file and the agent's output. Use this view to verify the agent followed your instructions correctly before moving forward.
+
+## Editing Files
+
+You can make direct edits inside the editor whenever you want to adjust something the agent wrote. Click into any editable file and type your changes just as you would in a standard code editor. Changes you make are reflected in the agent's working environment, so subsequent steps in the task will pick up your updates automatically.
+
+<Tip>
+  If the agent's output only needs small tweaks — a variable rename, a wording change, or a minor fix — edit the file directly in the code editor instead of asking the agent to redo the work. It's faster and keeps the rest of the output intact.
+</Tip>
+
+## Saving and Continuing
+
+After reviewing or editing, return to the thread to continue the conversation. You can ask the agent to make further changes, try a different approach, or build on what it has already produced. For projects connected to GitHub, you can create a pull request directly from the current state of the files once you're satisfied with the output, so your changes go through a proper review process before merging.
+
+<Note>
+  The code editor is read-only for certain file types and on some plan tiers. If you need full editing access, check your current permissions on the [plan limits](/account/plan-limits) page.
+</Note>

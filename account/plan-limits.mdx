@@ -1,0 +1,90 @@
+---
+title: "Lilac Plan Limits and Usage Quotas"
+sidebarTitle: "Plan Limits"
+description: "Understand Lilac's plan tiers, usage quotas, and what happens when you reach a limit — so you can choose the right plan for your workflow."
+---
+
+Lilac offers plan tiers that determine how many tasks you can run, which AI models you can access, and which features are available to you. Understanding your plan limits helps you plan your work effectively, avoid unexpected interruptions, and choose the tier that best fits your workflow.
+
+## Plan Tiers
+
+Lilac currently offers three tiers. Because Lilac is in early beta, exact limits may vary — check your workspace or billing settings for the most current numbers.
+
+<CardGroup cols={2}>
+  <Card title="Free / Early Access" icon="seedling">
+    Get started with Lilac during the early access period. Includes a limited number of task runs per month, access to standard AI models, and basic integrations such as GitHub and Notion.
+  </Card>
+  <Card title="Pro" icon="bolt">
+    Designed for individuals who rely on Lilac daily. Includes a higher task run limit, access to all available models (including the most capable ones), priority queue placement, and the full suite of integrations.
+  </Card>
+  <Card title="Team" icon="users">
+    Built for groups working together. Shares usage across team members under centralized billing, and adds collaboration features so your team can coordinate in a shared workspace.
+  </Card>
+  <Card title="Enterprise" icon="building">
+    Custom limits and dedicated support for larger organizations. Contact the Lilac team to discuss requirements and pricing tailored to your needs.
+  </Card>
+</CardGroup>
+
+<Note>
+  Lilac is currently in early beta. Plan details, feature availability, and exact usage limits are subject to change. Always check the billing or settings panel inside your workspace for the most up-to-date information.
+</Note>
+
+## Usage Limits Explained
+
+Every plan enforces a set of usage limits. Here is what each limit controls:
+
+<Accordion title="Task Runs">
+  Each time you send a goal to the Lilac agent, it counts as one task run. A task run begins when the agent starts working on your request and ends when it finishes or you stop it. Your monthly task run allowance resets at the start of each billing period.
+</Accordion>
+
+<Accordion title="Model Access">
+  Different AI models have different capabilities and costs. Lower-tier plans provide access to standard models, while higher-tier plans unlock the most capable models available. The model selector in the workspace shows which models are available on your current plan.
+</Accordion>
+
+<Accordion title="Concurrent Tasks">
+  Concurrent tasks refers to how many tasks can run at the same time. Free and lower-tier plans may limit you to one active task at a time, while Pro and Team plans allow multiple tasks to run in parallel so your work is never waiting in line unnecessarily.
+</Accordion>
+
+<Accordion title="Integrations">
+  Some plan tiers restrict which tools you can connect. For example, connecting Gmail or Calendar may require a Pro plan or higher. You can always view which integrations are available to your tier from the connections panel in your workspace.
+</Accordion>
+
+## What Happens When You Hit a Limit
+
+When you reach your plan's quota for the current billing period, Lilac will notify you directly in the workspace thread. Depending on the limit you have reached, one of the following will happen:
+
+<Steps>
+  <Step title="You receive a notification">
+    Lilac displays a message in the workspace letting you know which limit you have reached and when your quota is scheduled to reset.
+  </Step>
+  <Step title="Queued tasks are paused">
+    Any tasks that have not yet started will be held in your queue until your quota resets or you upgrade your plan. Tasks already in progress will complete normally.
+  </Step>
+  <Step title="Choose how to proceed">
+    You can either upgrade your plan immediately to restore access, or wait for your quota to reset at the start of your next billing period. To upgrade, go to **Settings → Billing** in the workspace.
+  </Step>
+</Steps>
+
+<Warning>
+  Upgrading your plan mid-cycle does not retroactively restore task runs already counted against your previous quota. Your new limits take effect as soon as the upgrade is processed.
+</Warning>
+
+## Checking Your Usage
+
+You can view your current usage and plan details at any time from within the workspace.
+
+<Steps>
+  <Step title="Open Settings">
+    After signing in, navigate to your workspace at `/agent` and open the **Settings** menu from the sidebar or your account avatar.
+  </Step>
+  <Step title="Go to Billing">
+    Select **Billing** from the settings panel. You will see your current plan, the number of task runs used and remaining, and the date your quota resets.
+  </Step>
+  <Step title="Review integration status">
+    Still in Settings, open the **Connections** panel to see which integrations are active and whether your current plan supports additional ones.
+  </Step>
+</Steps>
+
+<Tip>
+  Choosing a faster, more efficient model for lighter tasks uses fewer resources and can help you stay within your plan limits longer. See [Selecting a Model](/using/selecting-a-model) to learn how to pick the right model for each task.
+</Tip>

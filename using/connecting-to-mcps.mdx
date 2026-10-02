@@ -1,0 +1,60 @@
+---
+title: "Connecting to MCP Tools and Integrations"
+sidebarTitle: "MCP Connections"
+description: "Connect Lilac to your existing tools via MCP — give the agent access to GitHub, Notion, Gmail, Calendar, and more to work across your whole workflow."
+---
+
+MCP (Model Context Protocol) is the open standard that lets Lilac connect to external tools and data sources you already use. By connecting your tools, you give the agent the context and capabilities it needs to complete real tasks — reading Notion pages, creating GitHub pull requests, referencing your emails, checking your calendar, and more. Connected tools turn Lilac from a conversational assistant into an agent that can take meaningful action across your entire workflow.
+
+## What Is MCP?
+
+MCP is an open protocol that standardizes how AI agents communicate with tools and external services. Instead of each integration requiring a bespoke implementation, MCP provides a common language so agents like Lilac can work with a growing ecosystem of connected services. When you authorize a tool through Lilac's MCP connections, the agent can read data from and take actions within that service on your behalf — within the limits you explicitly approve.
+
+## Available Connections
+
+<CardGroup cols={2}>
+  <Card title="GitHub" icon="github">
+    Connect your repositories so Lilac can explore your codebase, push changes, open pull requests, and help you review and merge work — all without leaving the workspace.
+  </Card>
+  <Card title="Notion" icon="book">
+    Give the agent access to your Notion pages and databases so it can read existing content, gather context for a task, and reference your notes and docs as it works.
+  </Card>
+  <Card title="Gmail" icon="envelope">
+    Let the agent read and reference your emails to gather context for tasks — useful when a task involves summarizing threads, drafting replies, or acting on information from your inbox.
+  </Card>
+  <Card title="Calendar" icon="calendar">
+    Share your calendar events with Lilac so it can keep upcoming commitments in mind and send you timely reminders as deadlines or meetings approach.
+  </Card>
+</CardGroup>
+
+## How to Connect a Tool
+
+<Steps>
+  <Step title="Open the workspace">
+    Go to [lilac.codes/agent](https://lilac.codes/agent) and sign in to your account.
+  </Step>
+  <Step title="Open the Connections panel">
+    Click the **Connections** or **Tools** button in the workspace header or settings panel. This opens the list of available integrations.
+  </Step>
+  <Step title="Select a tool to connect">
+    Find the tool you want to connect and click **Connect** next to it.
+  </Step>
+  <Step title="Complete the authorization flow">
+    Follow the authorization steps for that service. You'll be asked to sign in to the external service and choose exactly which permissions to grant — you are always in control of what Lilac can access.
+  </Step>
+  <Step title="Start using the connection">
+    Once connected, mention the tool in your task prompt and Lilac will use it directly. For many tools, Lilac will also pick up the connection automatically when it's relevant to the task at hand.
+  </Step>
+</Steps>
+
+## Controlling Access
+
+You authorize only the permissions each tool needs, and nothing more. Lilac only uses the access you explicitly grant during the authorization flow — it cannot access services you haven't connected or expand its own permissions. If you want to remove a connection, open the Connections panel at any time and click **Disconnect** next to the tool. Your authorization is revoked immediately and Lilac will no longer have access to that service.
+
+<Warning>
+  Connecting a tool grants Lilac the ability to take real actions on your behalf within that service — such as pushing code, modifying Notion pages, or reading emails. Review the permissions carefully before completing the authorization flow, and only grant the access a task genuinely requires.
+</Warning>
+
+<Tip>
+  Connect GitHub before starting any coding task. With GitHub connected, the agent can push changes to a branch and open a pull request for your review, so you always have a chance to inspect the work before it's merged.
+</Tip>

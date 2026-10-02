@@ -1,0 +1,58 @@
+{
+  "projectType": "saas",
+  "projectName": "Lilac",
+  "projectDescription": "Lilac is an AI agent workspace that connects to your existing tools, runs tasks in its own cloud environment, and keeps you informed so work moves forward even when you step away.",
+  "theme": "willow",
+  "primaryColor": "#ba90c2",
+  "lightColor": "#e49cec",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "get-started"
+            ]
+          },
+          {
+            "group": "Using Lilac",
+            "pages": [
+              "using/code-editor",
+              "using/selecting-a-model",
+              "using/connecting-to-mcps"
+            ]
+          },
+          {
+            "group": "Account & Plans",
+            "pages": [
+              "account/plan-limits"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI agent that runs tasks autonomously in a cloud environment",
+    "Built-in code editor for reviewing and editing files",
+    "Connect to MCP (Model Context Protocol) tools and integrations",
+    "Model selection to choose the best AI for each task",
+    "Plan limits and usage quotas per account tier",
+    "GitHub, Notion, Gmail, and Calendar integrations",
+    "Live task progress visible in the workspace thread",
+    "Waitlist-gated early access with Google and GitHub sign-in"
+  ],
+  "publicApiSurface": [
+    "Agent workspace UI (/agent)",
+    "MCP tool connections",
+    "Model catalog and selection",
+    "GitHub integration (repository access, pull requests)",
+    "Notion integration",
+    "Calendar reminders",
+    "Plan quota and billing"
+  ]
+}
